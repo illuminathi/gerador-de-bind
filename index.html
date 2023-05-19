@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de binds</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+            <fieldset>
+                <legend>Bind nome</legend>
+
+                <p>
+                    Seu nome:
+                    <input type="text" name="nome" id="nome" autocomplete="off" size="5" maxlength="10">
+                </p>
+
+                <p>
+                    Cor 1:
+                    <select name="cor1" id="cor1">
+                        <option value="0">Branco</option>
+                        <option value="2" style="background-color: black; color: white;">Preto</option>
+                        <option value="5" style="background-color: rgba(77, 77, 77, 255);">Cinza</option>
+                        <option value="6" style="background-color: rgba(224, 50, 50, 255);">Vermelho</option>
+                        <option value="7" style="background-color: rgba(240, 153, 153, 255);">Rosa</option>
+                        <option value="9" style="background-color:rgba(93, 182, 229, 255)">Azul</option>
+                        <option value="12" style="background-color: rgba(240, 200, 80, 255);">Amarelo</option>
+                        <option value="18" style="background-color: rgba(114, 204, 114, 255);">Verde</option>
+                    </select>
+                </p>
+
+                <p>
+                    Cor 2:
+                    <select name="cor2" id="cor2">
+                        <option value="0">Branco</option>
+                        <option value="2" style="background-color: black; color: white;">Preto</option>
+                        <option value="5" style="background-color: rgba(77, 77, 77, 255);">Cinza</option>
+                        <option value="6" style="background-color: rgba(224, 50, 50, 255);">Vermelho</option>
+                        <option value="7" style="background-color: rgba(240, 153, 153, 255);">Rosa</option>
+                        <option value="9" style="background-color:rgba(93, 182, 229, 255)">Azul</option>
+                        <option value="12" style="background-color: rgba(240, 200, 80, 255);">Amarelo</option>
+                        <option value="18" style="background-color: rgba(114, 204, 114, 255);">Verde</option>
+                    </select>
+                </p>
+
+                <p><input type="submit" value="Gerar" onclick="gerarnome()"></p>
+
+                <input type="text" name="resul" id="resul" value="">
+                <button id="botaoc" onclick="copiar1()">Copiar</button>
+            </fieldset>
+            
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+            var resul = window.document.getElementById("resul").value
+            var nome = window.dodument.getElementById("nome")
+            var cor1 = window.document.getElementById("cor1")
+            var cor2 = window.document.getAnimations("cor2")
+
+            function gerarnome() {
+                
+            }
+
+            function copiar1() {
+            document.getElementById("resul").select()
+            document.execCommand('copy')
+            }
+    </script>
+</body>
+</html>
